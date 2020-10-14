@@ -54,6 +54,12 @@ p {
     padding-right: 80px;
     padding-left: 50px;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .nomor1 {
     
     width: 85px;
@@ -84,13 +90,6 @@ strong{
     padding-left: 12px;
     padding-right: 12px;
     background: #393E46;
-}
-
-a{
-    color: aliceblue;
-    text-decoration: none;
-    text-align: center;
-    transition: .3s;
 }
 
 .utama{
