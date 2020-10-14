@@ -1,29 +1,30 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: segoe UI Regular;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 body{
+    width: 100%;
+    height: auto;
     background: #232931;
+    align-content: center;
+    justify-content: center;
 }
 
-#halaman2{
-    height: 681px;
+#nomorsatu{
+    height: auto;
     background-color: #eeeeee;
 }
 
-
-
-#halaman3{
-    height: 550px;
+#nomordua{
+    height: auto;
     background-color: #eeeeee;
 }
 
 header{
     height: 126px;
-    
-    
 }
 
 p {
@@ -32,7 +33,6 @@ p {
 }
 
 .member1 {
-    
     display: inline-block;
     height: 10px;
     width: 120px;
@@ -45,10 +45,9 @@ p {
 
 .member2 {
     float: right;
-    
     display: inline-block;
     height: 10px;
-    width: 250px;
+    width: 300px;
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 50px;
@@ -57,14 +56,14 @@ p {
 }
 .member3{
     float: left;
-    
     display: inline-block;
     height: 10px;
-    width: 100px;
+    width: 150px;
     padding-top: 15px;
     padding-bottom: 50px;
     padding-right: 80px;
     padding-left: 50px;
+    text-align: center;
 }
 
 a {
@@ -73,8 +72,7 @@ a {
 }
 
 .nomor1 {
-    
-    width: 85px;
+    width: 100px;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 12px;
@@ -87,13 +85,13 @@ strong{
 
 .member4{
     float: right;
-    
     height: 10px;
-    width: 100px;
+    width: 150px;
     padding-top: 15px;
     padding-bottom: 50px;
-    padding-right: 80px;
+    padding-right: 50px;
     padding-left: 50px;
+    text-align: center;
 }
 .nomor2{
     width: 85px;
@@ -113,12 +111,12 @@ strong{
     text-align: center;
     height: 435px;    
 }
-}
+
 .utama3 .stengah11{
     height: 100px;
 }
 .utama .stengah1{
-    height: 217px;
+    height: 180px;
 }
 .utama .stengah11{
     height: 100px;
@@ -140,7 +138,6 @@ strong{
     padding-top: 45px;
     padding-left: 30px;
     font-size: 900%;
-    
     height: 135px;
     width: 800px;
     float: left;
@@ -153,40 +150,78 @@ strong{
     font-size: 500%;
     padding-right: 120px;
     height: 135px;
-    
     float: left;
 }
 .utama .stengah2{
     height: 217px;
 }
-.isi{
+
+.container1 {
+    height: auto;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.isi {
     height: 100px;
     padding-top: 60px;
     float: left;
     padding-left: 325px;
+    text-align: left;
+}
+
+.isinilai {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    height: 170px;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.isinilai .card{
+    margin: 10px;
+    padding: 5px;
+    width: 220px;
 }
 
 h1:hover{
     background-color: teal;
 }
 
-#halaman2 .member1 p{
+#nomorsatu .member1 p{
     color: #232931;
     font-weight: bold;
 }
 
-#halaman2 .member2 p{
+#nomorsatu .container1 p{
+    color: #232931;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+#nomorsatu .member2 p{
     color: #232931;
     font-weight: bold;
 }
 
-#halaman3 .member1 p{
+#nomordua .member1 p{
     color: #232931;
     font-weight: bold;
 }
-#halaman3 .member2 p{
+#nomordua .member2 p{
     font-weight: bold;
     color: #232931;
+}
+
+#nomordua .isinilai p{
+    color: #232931;
+}
+
+#nomordua .nilai p{
+    font-size: 20px;
 }
 
 footer{
