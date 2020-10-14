@@ -54,7 +54,7 @@ p {
     padding-right: 80px;
     padding-left: 50px;
 }
-.member3 a{
+.nomor1 {
     
     width: 85px;
     padding-top: 12px;
@@ -85,6 +85,7 @@ strong{
     padding-right: 12px;
     background: #393E46;
 }
+
 a{
     color: aliceblue;
     text-decoration: none;
@@ -99,6 +100,20 @@ a{
 .utama .stengah1{
     height: 217px;
 }
+.utama .stengah11{
+    height: 100px;
+}
+.judul11{
+    color: #4ECCA3;
+    padding-bottom: 30px;
+    padding-top: 5px;
+    padding-left: 400px;
+    font-size: 500%;
+    padding-right: 120px;
+    height: 135px;
+    
+    float: left;
+}
 
 .judul{
     color: #4ECCA3;
@@ -109,6 +124,17 @@ a{
     
     height: 135px;
     width: 800px;
+    float: left;
+}
+.judul2{
+    color: #4ECCA3;
+    padding-bottom: 30px;
+    padding-top: 5px;
+    padding-left: 400px;
+    font-size: 500%;
+    padding-right: 120px;
+    height: 135px;
+    
     float: left;
 }
 .utama .stengah2{
