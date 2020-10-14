@@ -8,6 +8,18 @@ body{
     background: #232931;
 }
 
+#halaman2{
+    height: 681px;
+    background-color: #eeeeee;
+}
+
+
+
+#halaman3{
+    height: 550px;
+    background-color: #eeeeee;
+}
+
 header{
     height: 126px;
     
@@ -96,6 +108,15 @@ strong{
     text-align: center;
     height: 435px;
 }
+
+.utama3{
+    text-align: center;
+    height: 435px;    
+}
+}
+.utama3 .stengah11{
+    height: 100px;
+}
 .utama .stengah1{
     height: 217px;
 }
@@ -110,7 +131,6 @@ strong{
     font-size: 500%;
     padding-right: 120px;
     height: 135px;
-    
     float: left;
 }
 
@@ -150,11 +170,31 @@ h1:hover{
     background-color: teal;
 }
 
+#halaman2 .member1 p{
+    color: #232931;
+    font-weight: bold;
+}
+
+#halaman2 .member2 p{
+    color: #232931;
+    font-weight: bold;
+}
+
+#halaman3 .member1 p{
+    color: #232931;
+    font-weight: bold;
+}
+#halaman3 .member2 p{
+    font-weight: bold;
+    color: #232931;
+}
 
 footer{
-    height: 120px;
-    
-    
+    height: 120px; 
+}
+
+.hal3{
+    background-color: #eeeeee;
 }
 header div a:hover {
     color : rgb(0, 204, 255);
