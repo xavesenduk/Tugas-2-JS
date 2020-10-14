@@ -1,10 +1,8 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>KELOMPOK III</title>
+        <title>Kelompok 3 - IFN512B</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="halaman1">
@@ -36,15 +34,52 @@
         </main>
         <footer>
             <div class="member3">
-                <p class="nomor1"><a href="#halaman2">NOMOR <strong>SATU</strong></a></p>
+                <p class="nomor1"><a href="#nomorsatu">NOMOR <strong>SATU</strong></a></p>
             </div>
             <div class="member4">
-                <p class="nomor2"><a href="#halaman3">NOMOR <strong>DUA</strong></a></P>
+                <p class="nomor2"><a href="#nomordua">NOMOR <strong>DUA</strong></a></P>
             </div>
 
         </footer>
         </div>
-        <div id="halaman2">
+        
+        <div id="nomorsatu">
+            <header>
+                <div class="member1">
+                    <p>KELOMPOK TIGA</p>
+                </div>
+                <div class="member2">
+                    <p>
+                        IFN512B PENGEMBANGAN APLIKASI WEB
+                    </p>
+                </div>
+            </header>
+            <main>
+                <div class="utama3">
+                    <div class="stengah11">
+                        <p class="judul11">
+                        siapakah kami?
+                        </p>
+                    </div>
+                    <div class="stengah2">
+                        <div class="container1">
+                            <p id="namamhs">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="hal3">
+                <div class="member3">
+                    <p class="nomor1"><a href="">NOMOR <strong>SATU</strong></a></p>
+                </div>
+                <div class="member4">
+                    <p class="nomor2"><a href="#nomordua">NOMOR <strong>DUA</strong></a></P>
+                </div>
+            </footer>
+        </div>
+
+        <div id="nomordua">
             <header>
                 <div class="member1">
                     <p>KELOMPOK TIGA</p>
@@ -58,16 +93,38 @@
             <main>
             <div class="utama">
                 <div class="stengah1">
-                <p class="judul2">
+                    <p class="judul2">
                         hitung nilaimu
-                </p>
+                    </p>
                 </div>
                 <div class="stengah2">
-                    <div class="isi">
-                    </div>
-                    <div class="isi2">
-                        <div class="isi21">
-                            
+                    <div class="isinilai">
+                        <div class="card">
+                            <p>Nilai Tugas</p> <br>
+                            <form action="" id="ftugas">
+                                <input type="text" name="" id="tugas1" placeholder="Pertama">
+                                <input type="text" name="" id="tugas2" placeholder="Kedua">
+                                <input type="text" name="" id="tugas3" placeholder="Ketiga">
+                                <input type="text" name="" id="tugas4" placeholder="Keempat">
+                                <input type="text" name="" id="tugas5" placeholder="Kelima">
+                            </form>
+                        </div>
+                        <div class="card">
+                            <p>Nilai Proyek</p> <br>
+                            <form action="" id="fproyek">
+                                <input type="text" name="" id="uts" placeholder="Ujian Tengah Semester">
+                                <input type="text" name="" id="uas" placeholder="Ujian Akhir Semester"> <br><br>
+                                <input type="button" value="Hitung" onclick="hitung()">
+                                <input type="button" value="Reset" onclick="resetForm()">
+                            </form>
+                        </div>
+                        <div class="card">
+                            <div class="nilai">
+                                <p>Nilai Akhir</p> <br>
+                                <p id="nangka">Angka : ?</p>
+                                <p id="nhuruf">Huruf : ?</p>
+                                <p id="kelulusan">Anda dinyatakan ...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -75,42 +132,7 @@
             </main>
             <footer>
                 <div class="member3">
-                    <p class="nomor1"><a href="">NOMOR <strong>SATU</strong></a></p>
-                </div>
-                <div class="member4">
-                    <p class="nomor2"><a href="#halaman3">NOMOR <strong>DUA</strong></a></P>
-                </div>
-    
-            </footer>
-        </div>
-        <div id="halaman3">
-            <header>
-                <div class="member1">
-                    <p>KELOMPOK TIGA</p>
-                </div>
-                <div class="member2">
-                    <p>
-                        IFN512B PENGEMBANGAN APLIKASI WEB
-                    </p>
-                </div>
-            </header>
-            <main>
-            <div class="utama3">
-                <div class="stengah11">
-                <p class="judul11">
-                        siapakah kami?
-                </p>
-                </div>
-                <div class="stengah2">
-                    
-                   
-                    </div>
-                </div>
-            </div>
-            </main>
-            <footer class="hal3">
-                <div class="member3">
-                    <p class="nomor1"><a href="#halaman2">NOMOR <strong>SATU</strong></a></p>
+                    <p class="nomor1"><a href="#nomorsatu">NOMOR <strong>SATU</strong></a></p>
                 </div>
                 <div class="member4">
                     <p class="nomor2"><a href="">NOMOR <strong>DUA</strong></a></P>
@@ -120,3 +142,76 @@
         </div>
     </body>
 </html>
+<script>
+    /* Nomor satu */
+    var nama = ["Fransiscus Xaverius Senduk", "Anastasya Anggereany Eliana Lumowa", "Romario Lendo", "Monalisa Hanna Runtulalo"]
+    nama.forEach(printNama);
+
+    function printNama(item) {
+        document.getElementById("namamhs").innerHTML += item + "<br>";
+    }
+
+    /* Nomor dua */
+    function hitung() {
+        var Tugas1 = parseFloat(document.getElementById("tugas1").value);
+        if(isNaN(Tugas1)) Tugas1=0.0;
+        var Tugas2 = parseFloat(document.getElementById("tugas2").value);
+        if(isNaN(Tugas2)) Tugas2=0.0;
+        var Tugas3 = parseFloat(document.getElementById("tugas3").value)
+        if(isNaN(Tugas3)) Tugas3=0.0;
+        var Tugas4 = parseFloat(document.getElementById("tugas4").value);
+        if(isNaN(Tugas4)) Tugas4=0.0;
+        var Tugas5 = parseFloat(document.getElementById("tugas5").value);
+        if(isNaN(Tugas5)) Tugas5=0.0;
+        var ProyekUTS = parseFloat(document.getElementById("uts").value);
+        if(isNaN(ProyekUTS)) ProyekUTS=0.0;
+        var ProyekUAS = parseFloat(document.getElementById("uas").value);
+        if(isNaN(ProyekUAS)) ProyekUAS=0.0;
+
+        var tugas = (Tugas1 + Tugas2 + Tugas3 + Tugas4 + Tugas5) * 0.1;
+        var puts = ProyekUTS * 0.25;
+        var puas = ProyekUAS * 0.25;
+
+        var nilaiTotal = tugas + puts + puas;
+
+        var hasil = 'A';
+        if (nilaiTotal >= 80) {
+            hasil = 'A';
+        } 
+        else if (nilaiTotal >= 76 && nilaiTotal < 80) {
+            hasil = 'B+';
+        } 
+        else if (nilaiTotal >= 70 && nilaiTotal < 76) {
+            hasil = 'B';
+        } 
+        else if (nilaiTotal >= 65 && nilaiTotal < 70) {
+            hasil = 'C+';
+        } 
+        else if (nilaiTotal >= 60 && nilaiTotal < 65) {
+            hasil = 'C';
+        }
+        else if (nilaiTotal >= 50 && nilaiTotal < 60) {
+            hasil = 'D';
+        }
+        else {
+            hasil = 'E';
+        }
+        
+        var ket = 'LULUS';
+        if (nilaiTotal >= 60) {
+            ket = 'LULUS';
+        }
+        else {
+            ket = 'TIDAK LULUS';
+        }
+
+        document.getElementById("nangka").innerHTML = 'Angka : '+nilaiTotal;
+        document.getElementById("nhuruf").innerHTML = 'Huruf : '+hasil;
+        document.getElementById("kelulusan").innerHTML = 'Anda dinyatakan : '+ket;
+    }
+
+    function resetForm() {
+        document.getElementById("ftugas").reset();
+        document.getElementById("fproyek").reset();
+    }
+</script>
